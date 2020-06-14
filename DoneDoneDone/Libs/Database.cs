@@ -16,7 +16,7 @@ using System.Globalization;
 
 namespace DoneDoneDone.Libs
 {
-    class Database
+  public  class Database
     {
 
         private Database() { }//Private constructor: Cấu trúc thuộc tính riêng của Class Database này khi được khởi tạo - Hàm dựng
@@ -50,7 +50,7 @@ namespace DoneDoneDone.Libs
         //Data Source =.; Initial Catalog = HELPDESK; Persist Security Info=True;User ID = helpdesk; Password=123456
 
         //Khai báo cấu hình kết nối cố định - lưu vào code
-        public SqlConnection con = new SqlConnection(@"Data Source=THE_;Initial Catalog=HELPDESK;Integrated Security=True");
+        public SqlConnection con = new SqlConnection(@"Data Source=THE_J4;Initial Catalog=CSDL_QuanLyTTTA;Integrated Security=True");
 
         //Khai báo cấu hình kết nối từ file cấu hình Setting, dễ dàng khi đi mang đi cài đặt
         //public SqlConnection con = new SqlConnection(Properties.Settings.Default.ConnectionString);
@@ -60,7 +60,7 @@ namespace DoneDoneDone.Libs
         #region Thư viện thực thi SQL Command có Parameter
         SqlCommand command = new SqlCommand();
 
-        public DataTable ExcuteToDataTable(string cmdText, CommandType type = CommandType.Text, SqlParameter[] prms = null)
+        public DataTable ExcuteToDataTable(string cmdText, CommandType type = CommandType.Text, SqlParameter[] prms=null)
         {
             command.CommandText = cmdText;
             command.CommandType = type;
@@ -90,7 +90,7 @@ namespace DoneDoneDone.Libs
             return dttb;
         }
 
-        public void ExecuteNonQuery(string cmdText, CommandType type = CommandType.Text, SqlParameter[] prms = null)
+        public void ExecuteNonQuery(string cmdText, CommandType type = CommandType.Text, SqlParameter[] prms=null)
         {
             command.CommandText = cmdText;
             command.CommandType = type;
@@ -99,12 +99,11 @@ namespace DoneDoneDone.Libs
             {
                 foreach (SqlParameter p in prms)
                 {
-                    if (p != null)
-                    {
+                    if (p != null) {
                         command.Parameters.Add(p);
-                    }
+                    }                
                 }
-            }
+            }          
             command.Connection = con;
             con.Open();
             try
@@ -113,7 +112,7 @@ namespace DoneDoneDone.Libs
             }
             catch (Exception ex)
             {
-                throw new ApplicationException("Không thể thực thi SQL!", ex);
+               throw new ApplicationException("Không thể thực thi SQL!", ex);
             }
             con.Close();
         }
@@ -168,7 +167,7 @@ namespace DoneDoneDone.Libs
         // Giải mã một chuỗi Unicode được mã hóa theo Base64.
         public string DecodeBase64ToString(string src)
         {
-
+            
             try
             {
                 // Giải mã vào mảng kiểu byte.

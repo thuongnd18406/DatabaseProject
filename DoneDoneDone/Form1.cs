@@ -43,9 +43,7 @@ namespace DoneDoneDone
             public static Color color5 = Color.FromArgb(249,88,155);
             public static Color color6 = Color.FromArgb(24,161,251);
             public static Color color7 = Color.FromArgb(35,160,200);
-            public static Color color8 = Color.FromArgb(20,25,250);
-                              
-
+            public static Color color8 = Color.FromArgb(20,25,250);                               
         }
         //Method
         private void ActivateButton(object senderBtn,Color color)
@@ -204,6 +202,51 @@ namespace DoneDoneDone
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelTitleBar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblTitleChildForm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconCurrentChildForm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelShadow_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCourse_Click(object sender, EventArgs e)
         {
 
         }

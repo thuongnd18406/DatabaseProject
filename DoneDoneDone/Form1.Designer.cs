@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            FontAwesome.Sharp.IconButton btnAdmin;
+            FontAwesome.Sharp.IconButton btnCourse;
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.btnAboutUs = new FontAwesome.Sharp.IconButton();
@@ -47,7 +47,7 @@
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            btnAdmin = new FontAwesome.Sharp.IconButton();
+            btnCourse = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogo)).BeginInit();
@@ -60,27 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnAdmin
-            // 
-            btnAdmin.Dock = System.Windows.Forms.DockStyle.Top;
-            btnAdmin.FlatAppearance.BorderSize = 0;
-            btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnAdmin.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            btnAdmin.ForeColor = System.Drawing.Color.White;
-            btnAdmin.IconChar = FontAwesome.Sharp.IconChar.Users;
-            btnAdmin.IconColor = System.Drawing.Color.White;
-            btnAdmin.IconSize = 32;
-            btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnAdmin.Location = new System.Drawing.Point(0, 124);
-            btnAdmin.Margin = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            btnAdmin.Name = "btnAdmin";
-            btnAdmin.Rotation = 0D;
-            btnAdmin.Size = new System.Drawing.Size(146, 38);
-            btnAdmin.TabIndex = 3;
-            btnAdmin.Text = "Admin";
-            btnAdmin.UseVisualStyleBackColor = true;
-            btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
-            // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(63)))));
@@ -89,7 +68,7 @@
             this.panelMenu.Controls.Add(this.btnClassRoom);
             this.panelMenu.Controls.Add(this.btnDocument);
             this.panelMenu.Controls.Add(this.btnStudent);
-            this.panelMenu.Controls.Add(btnAdmin);
+            this.panelMenu.Controls.Add(btnCourse);
             this.panelMenu.Controls.Add(this.btnTeacher);
             this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -203,6 +182,27 @@
             this.btnStudent.Text = "Student";
             this.btnStudent.UseVisualStyleBackColor = true;
             this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
+            // 
+            // btnCourse
+            // 
+            btnCourse.Dock = System.Windows.Forms.DockStyle.Top;
+            btnCourse.FlatAppearance.BorderSize = 0;
+            btnCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnCourse.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            btnCourse.ForeColor = System.Drawing.Color.White;
+            btnCourse.IconChar = FontAwesome.Sharp.IconChar.Users;
+            btnCourse.IconColor = System.Drawing.Color.White;
+            btnCourse.IconSize = 32;
+            btnCourse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnCourse.Location = new System.Drawing.Point(0, 124);
+            btnCourse.Margin = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            btnCourse.Name = "btnCourse";
+            btnCourse.Rotation = 0D;
+            btnCourse.Size = new System.Drawing.Size(146, 38);
+            btnCourse.TabIndex = 3;
+            btnCourse.Text = "Admin";
+            btnCourse.UseVisualStyleBackColor = true;
+            btnCourse.Click += new System.EventHandler(this.btnCourse_Click);
             // 
             // btnTeacher
             // 
